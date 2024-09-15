@@ -30,7 +30,7 @@ Write a YAML file to define a Pod that uses an `emptyDir` volume to share data b
 
 - **Task**: Deploy the Pod and verify that both containers can read/write data to the shared volume.
 
-- ![.]([example.png](https://github.com/SaifmElnagar/lab6-kubernetes/blob/main/p4/Pasted%20image.png)
+![Project-Output](https://github.com/SaifmElnagar/Orange-Docker-Project/blob/main/Screenshots/Screenshot%20from%202024-09-13%2017-56-26.png)
   
 ### 5. Set up a Pod with a hostPath Volume
 
