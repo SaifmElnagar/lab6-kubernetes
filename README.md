@@ -30,6 +30,8 @@ Write a YAML file to define a Pod that uses an `emptyDir` volume to share data b
 
 - **Task**: Deploy the Pod and verify that both containers can read/write data to the shared volume.
 
+- ![.]([example.png](https://github.com/SaifmElnagar/lab6-kubernetes/blob/main/p4/Pasted%20image.png)
+  
 ### 5. Set up a Pod with a hostPath Volume
 
 Create a YAML definition for a Pod that mounts a `hostPath` volume to access files from the host node’s file system.
