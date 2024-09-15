@@ -1,0 +1,27 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: subpath-example
+spec:
+  initContainers:
+  - name: init-config
+    image: busybox
+    command: ['sh', '-c', 'mkdir -p /mnt/subdir1 && mkdir -p /mnt/subdir2 && echo "This is file 1" > /mnt/subdir1/file1.txt && echo "This is file 2" > /mnt/subdir2/file2.txt']
+    volumeMounts:
+    - name: example-volume
+      mountPath: /mnt
+  containers:
+  - name: example-container
+    image: busybox
+    command: [ "sh", "-c", "sleep 3600" ]
+    volumeMounts:
+    - name: example-volume
+      mountPath: /mnt/subdir1
+      subPath: subdir1
+    - name: example-volume
+      mountPath: /mnt/subdir2
+      subPath: subdir2
+  volumes:
+  - name: example-volume
+    emptyDir: {}
+

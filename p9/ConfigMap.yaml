@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: example-config
+data:
+  config1: "This is config data 1"
+  config2: "This is config data 2"
