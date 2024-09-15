@@ -30,7 +30,7 @@ Write a YAML file to define a Pod that uses an `emptyDir` volume to share data b
 
 - **Task**: Deploy the Pod and verify that both containers can read/write data to the shared volume.
 
-![Project-Output](https://github.com/SaifmElnagar/Orange-Docker-Project/blob/main/Screenshots/Screenshot%20from%202024-09-13%2017-56-26.png)
+![Project-Output](https://github.com/SaifmElnagar/lab6-kubernetes/blob/main/p4/Pasted%20image.png)
   
 ### 5. Set up a Pod with a hostPath Volume
 
@@ -38,11 +38,15 @@ Create a YAML definition for a Pod that mounts a `hostPath` volume to access fil
 
 - **Task**: Deploy the Pod and verify it can read/write to the specified directory on the host node.
 
+  ![Project-Output](https://github.com/SaifmElnagar/lab6-kubernetes/blob/main/p5/Pasted%20image.png)
+
 ### 6. Deploy a PersistentVolume (PV) and PersistentVolumeClaim (PVC)
 
 Define a PersistentVolume of 5Gi with `ReadWriteOnce` access mode. Then, create a PersistentVolumeClaim requesting 2Gi from this PV.
 
 - **Task**: Deploy the resources and ensure the PVC is bound to the PV.
+
+  ![Project-Output](https://github.com/SaifmElnagar/lab6-kubernetes/blob/main/p6/Pasted%20image.png)
 
 ### 7. Create a Pod Using a PVC
 
@@ -50,11 +54,15 @@ Create a Pod YAML definition that uses the PVC from Exercise 6. Mount the PVC to
 
 - **Task**: Test and verify that the storage is accessible inside the Pod.
 
+  ![Project-Output](https://github.com/SaifmElnagar/lab6-kubernetes/blob/main/p7/Pasted%20image.png)
+
 ### 8. Dynamic Provisioning of PersistentVolumes
 
 Create a `StorageClass` that uses a dynamic provisioner such as AWS EBS, GCE Persistent Disk, or NFS. Then, deploy a PVC requesting storage dynamically using this `StorageClass`.
 
 - **Task**: Verify that the storage is provisioned dynamically.
+
+![Project-Output](https://github.com/SaifmElnagar/lab6-kubernetes/blob/main/p8/Pasted%20image%20(2).png)
 
 ### 9. Use a ConfigMap as a Volume
 
@@ -62,11 +70,15 @@ Create a `ConfigMap` with some configuration data. Write a YAML definition for a
 
 - **Task**: Verify the ConfigMap data is accessible inside the container.
 
+![Project-Output](https://github.com/SaifmElnagar/lab6-kubernetes/blob/main/p9/Pasted%20image.png)
+
 ### 10. Create a Pod with a Secret as a Volume
 
 Create a Kubernetes Secret containing sensitive data. Write a YAML definition for a Pod that mounts the Secret as a volume.
 
 - **Task**: Verify that the sensitive data is securely accessible inside the container.
+
+  ![Project-Output](https://github.com/SaifmElnagar/lab6-kubernetes/blob/main/p10/Pasted%20image.png)
 
 ### 11. Set up a Pod with a gitRepo Volume
 
@@ -74,14 +86,20 @@ Create a Pod that uses a `gitRepo` volume to clone a Git repository into the con
 
 - **Task**: Verify that the repository's contents are accessible inside the container.
 
+  ![Project-Output](https://github.com/SaifmElnagar/lab6-kubernetes/blob/main/p11/Pasted%20image.png)
+
 ### 12. Resize a PersistentVolumeClaim (PVC)
 
 Create a PVC and bind it to a Pod. After deployment, resize the PVC to request more storage (if supported by the storage provider).
 
 - **Task**: Verify that the PVC has been resized successfully.
 
+  ![Project-Output](https://github.com/SaifmElnagar/lab6-kubernetes/blob/main/p12/Pasted%20image.png)
+
 ### 13. Use subPath for Mounting Volumes
 
 Create a Pod with a single volume and use the `subPath` feature to mount different subdirectories of that volume to various paths inside the container.
 
 - **Task**: Verify that each path corresponds to the correct subdirectory.
+
+  ![Project-Output](https://github.com/SaifmElnagar/lab6-kubernetes/blob/main/p13/Pasted%20image.png)
