@@ -38,7 +38,7 @@ Create a YAML definition for a Pod that mounts a `hostPath` volume to access fil
 
 - **Task**: Deploy the Pod and verify it can read/write to the specified directory on the host node.
 
-  ![Project-Output](https://github.com/SaifmElnagar/lab6-kubernetes/blob/main/p5/Pasted%20image.png)
+![Project-Output](https://github.com/SaifmElnagar/lab6-kubernetes/blob/main/p5/Pasted%20image.png)
 
 ### 6. Deploy a PersistentVolume (PV) and PersistentVolumeClaim (PVC)
 
@@ -46,7 +46,7 @@ Define a PersistentVolume of 5Gi with `ReadWriteOnce` access mode. Then, create 
 
 - **Task**: Deploy the resources and ensure the PVC is bound to the PV.
 
-  ![Project-Output](https://github.com/SaifmElnagar/lab6-kubernetes/blob/main/p6/Pasted%20image.png)
+![Project-Output](https://github.com/SaifmElnagar/lab6-kubernetes/blob/main/p6/Pasted%20image.png)
 
 ### 7. Create a Pod Using a PVC
 
@@ -54,7 +54,7 @@ Create a Pod YAML definition that uses the PVC from Exercise 6. Mount the PVC to
 
 - **Task**: Test and verify that the storage is accessible inside the Pod.
 
-  ![Project-Output](https://github.com/SaifmElnagar/lab6-kubernetes/blob/main/p7/Pasted%20image.png)
+![Project-Output](https://github.com/SaifmElnagar/lab6-kubernetes/blob/main/p7/Pasted%20image.png)
 
 ### 8. Dynamic Provisioning of PersistentVolumes
 
@@ -78,7 +78,7 @@ Create a Kubernetes Secret containing sensitive data. Write a YAML definition fo
 
 - **Task**: Verify that the sensitive data is securely accessible inside the container.
 
-  ![Project-Output](https://github.com/SaifmElnagar/lab6-kubernetes/blob/main/p10/Pasted%20image.png)
+![Project-Output](https://github.com/SaifmElnagar/lab6-kubernetes/blob/main/p10/Pasted%20image.png)
 
 ### 11. Set up a Pod with a gitRepo Volume
 
@@ -86,7 +86,7 @@ Create a Pod that uses a `gitRepo` volume to clone a Git repository into the con
 
 - **Task**: Verify that the repository's contents are accessible inside the container.
 
-  ![Project-Output](https://github.com/SaifmElnagar/lab6-kubernetes/blob/main/p11/Pasted%20image.png)
+![Project-Output](https://github.com/SaifmElnagar/lab6-kubernetes/blob/main/p11/Pasted%20image.png)
 
 ### 12. Resize a PersistentVolumeClaim (PVC)
 
@@ -94,7 +94,7 @@ Create a PVC and bind it to a Pod. After deployment, resize the PVC to request m
 
 - **Task**: Verify that the PVC has been resized successfully.
 
-  ![Project-Output](https://github.com/SaifmElnagar/lab6-kubernetes/blob/main/p12/Pasted%20image.png)
+![Project-Output](https://github.com/SaifmElnagar/lab6-kubernetes/blob/main/p12/Pasted%20image.png)
 
 ### 13. Use subPath for Mounting Volumes
 
@@ -102,4 +102,4 @@ Create a Pod with a single volume and use the `subPath` feature to mount differe
 
 - **Task**: Verify that each path corresponds to the correct subdirectory.
 
-  ![Project-Output](https://github.com/SaifmElnagar/lab6-kubernetes/blob/main/p13/Pasted%20image.png)
+![Project-Output](https://github.com/SaifmElnagar/lab6-kubernetes/blob/main/p13/Pasted%20image.png)
